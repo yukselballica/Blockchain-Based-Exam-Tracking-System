@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrol Paneli</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .btn-custom {
+            margin: 10px 0;
+            background-color: #ff7e5f;
+            border-color: #ff7e5f;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            width: 100%;
+        }
+        .btn-custom:hover {
+            background-color: #feb47b;
+            border-color: #feb47b;
+        }
+        .btn-danger {
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+        }
+        .btn-danger:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        .wallet-label {
+            font-size: 1.2em;
+        }
+        .wallet-address {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff7e5f;
+        }
+        .btn-group-custom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="btn-group-custom mb-4">
+            <label for="walletToggle" class="wallet-label">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+            <div>
+                <button type="button" class="btn btn-danger" id="back">Geri Git</button>
+            </div>
+        </div>
+        <h1 class="mb-4">Kontrol Paneli</h1>
+        <div>
+            <form>
+                <button type="button" class="btn btn-primary btn-custom mb-2" id="addClass">Sınıf Ekle</button>
+                <button type="button" class="btn btn-secondary btn-custom" id="shuffle">Sınav Yeri Belirleme</button> 
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/src/menu.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

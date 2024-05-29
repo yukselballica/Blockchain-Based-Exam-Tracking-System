@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademisyen Kontrol Paneli</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .wallet-info {
+            display: flex;
+            align-items: center;
+        }
+        .wallet-info span {
+            margin-right: 20px;
+        }
+        .wallet-info button {
+            color: #ffffff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            font-size: 1em;
+            padding: 10px 20px;
+            width: 100%;
+            color: #ffffff;
+        }
+        .btn-secondary-custom {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-secondary-custom:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+        .btn-primary-custom {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary-custom:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-4 d-flex justify-content-between align-items-center">
+            <h2 id="alert"></h2>
+            <div class="wallet-info">
+                <span>Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></span>
+            </div>
+        </div>
+        
+        <h1 class="mb-4">Akademisyen Kontrol Paneli</h1>
+        
+        <div>
+            <h2>Sınav Ekle</h2>
+            <form id="addClassTimeForm" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="classTimeCourseName">Ders Adı:</label>
+                    <input type="text" class="form-control" id="classTimeCourseName" name="classTimeCourse" required>
+                </div>
+                <div class="form-group">
+                    <label for="classTimeDate">Tarih:</label>
+                    <input type="date" class="form-control" id="classTimeDate" name="classTimeDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="classTimeHour">Saat:</label>
+                    <input type="time" class="form-control" id="classTimeHour" name="classTimeHour" required>
+                </div>
+                <div class="form-group">
+                    <label for="classTimeCourse">Derslik:</label>
+                    <input type="text" class="form-control" id="classTimeCourse" name="classTimeCourse" required>
+                </div>
+                <div class="form-group">
+                    <label for="classRoomCapacity">Kapasite:</label>
+                    <input type="number" class="form-control" id="classRoomCapacity" name="classroomCapacity" required>
+                </div>
+                <button type="button" class="btn btn-primary-custom btn-custom" id="save">Ekle</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/src/academy-control-panel.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

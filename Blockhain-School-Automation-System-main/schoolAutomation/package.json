@@ -1,0 +1,35 @@
+{
+  "name": "schoolautomation",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.13",
+    "@types/qrcode": "^1.5.5",
+    "@types/web": "^0.0.145",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.5.5",
+    "@wagmi/connectors": "^4.3.9",
+    "@wagmi/core": "^2.9.7",
+    "@walletconnect/client": "^1.8.0",
+    "@walletconnect/core": "^2.13.0",
+    "@walletconnect/sign-client": "^2.13.0",
+    "@walletconnect/web3wallet": "^1.12.0",
+    "@web3modal/ethers5": "^4.2.0",
+    "@web3modal/react": "^2.7.1",
+    "@web3modal/wagmi": "^4.2.0",
+    "ethers": "^6.12.1",
+    "qrcode": "^1.5.3",
+    "react": "^18.3.1",
+    "viem": "^2.10.5",
+    "web3": "^4.8.0"
+  }
+}

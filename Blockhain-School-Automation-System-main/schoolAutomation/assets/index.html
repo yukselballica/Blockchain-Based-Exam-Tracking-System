@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meüblockchain Sınav Konumları Belirleme Uygulaması</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@5.0.0-alpha.33/dist/material-ui.min.css" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e1e 30%, #2c3e50 100%);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .img-fluid {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .MuiButton-root {
+            margin: 10px;
+        }
+        .form-check-inline {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-4">
+            <img src="MEU.png" alt="Mersin Üniversitesi Blockchain Kulübü Logosu" class="img-fluid">
+        </div>
+        <h2 class="mb-4">Meüblockchain Sınav Konumları Belirleme Uygulaması</h2>
+        
+        <div class="mb-4">
+            <button id="connectWallet" class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary">Cüzdan Bağla</button>
+        </div>
+        <div id="statusForm" class="mb-4">
+            <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth">
+                <label class="MuiFormLabel-root" for="teacher">Statü:</label>
+                <div class="MuiRadioGroup-root">
+                    <label class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd">
+                        <span class="MuiRadio-root">
+                            <input class="MuiRadio-input" type="radio" name="status" id="teacher" value="0">
+                            <span class="MuiIconButton-label"><span class="MuiRadio-circle"></span></span>
+                        </span>
+                        <span class="MuiFormControlLabel-label">Teacher</span>
+                    </label>
+                    <label class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd">
+                        <span class="MuiRadio-root">
+                            <input class="MuiRadio-input" type="radio" name="status" id="student" value="1">
+                            <span class="MuiIconButton-label"><span class="MuiRadio-circle"></span></span>
+                        </span>
+                        <span class="MuiFormControlLabel-label">Student</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mui/material@5.0.0-alpha.33/dist/material-ui.min.js"></script>
+</body>
+</html>

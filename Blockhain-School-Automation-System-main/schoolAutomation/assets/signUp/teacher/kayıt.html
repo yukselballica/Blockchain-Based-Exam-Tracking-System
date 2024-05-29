@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Meüblockchain Sınav Konumları Belirleme Uygulaması</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .wallet-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .wallet-info span {
+            margin-right: 20px;
+        }
+        .wallet-info button {
+            margin-right: 10px;
+        }
+        .text-center img {
+            max-width: 100px;
+        }
+        .form-control {
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            color: #ffffff;
+        }
+        .form-control:focus {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border-color: #007bff;
+        }
+        .btn-custom {
+            font-size: 1em;
+            padding: 10px 20px;
+            width: 100%;
+            color: #ffffff;
+        }
+        .btn-danger-custom {
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+        }
+        .btn-danger-custom:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        .btn-primary-custom {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary-custom:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wallet-info">
+            <h2 id="alert"></h2>
+            <div>
+                <input type="checkbox" id="walletToggle" hidden>
+                <label for="walletToggle">Bağlı Cüzdan: <span id="walletAddress">0x123...456</span></label>
+                <div>
+                    <p>Cüzdan Adresi: 0x123...456</p>
+                    <button class="btn btn-danger-custom">Bağlantıyı Kopar</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-4">
+            <img src="MEU.png" alt="Mersin Üniversitesi Blockchain Kulübü Logosu" class="img-fluid">
+        </div>
+        <h1 class="text-center mb-4">Meüblockchain Sınav Konumları Belirleme Uygulaması</h1>
+        
+        <div>
+            <h2 class="mb-4">Kayıt Ol</h2>
+            <form id="registerForm" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="name">İsim:</label>
+                    <input type="text" class="form-control" id="name" name="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Soyisim:</label>
+                    <input type="text" class="form-control" id="surname" name="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="field">Alan:</label>
+                    <input type="text" class="form-control" id="field" name="registerStudentNumber" required>
+                </div>
+                <button type="button" class="btn btn-primary-custom btn-custom" id="button">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/src/teacher-signup.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

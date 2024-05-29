@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meüblockchain Sınav Konumları Belirleme Uygulaması</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .img-fluid {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            margin: 10px;
+            background-color: #ff7e5f;
+            border-color: #ff7e5f;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #feb47b;
+            border-color: #feb47b;
+        }
+        .form-check-inline {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-4">
+            <img src="MEU.png" alt="Mersin Üniversitesi Blockchain Kulübü Logosu" class="img-fluid">
+        </div>
+        <h2 class="mb-4">Meüblockchain Sınav Konumları Belirleme Uygulaması</h2>
+        
+        <div class="mb-4">
+            <button id="connectWallet" class="btn btn-custom">Cüzdan Bağla</button>
+        </div>
+        <div id="statusForm" class="mb-4">
+            <div class="form-group">
+                <label for="teacher">Statü:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="status" id="teacher" value="0">
+                    <label class="form-check-label" for="teacher">Teacher</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="status" id="student" value="1">
+                    <label class="form-check-label" for="student">Student</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
